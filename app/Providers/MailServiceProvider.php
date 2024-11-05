@@ -21,6 +21,10 @@ class MailServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+
+    }
+    public function boot_del(): void
+    {
         $smtpCredentials = Plugin::credentials('smtp');
 
         // Set default 'from' name for all mailers

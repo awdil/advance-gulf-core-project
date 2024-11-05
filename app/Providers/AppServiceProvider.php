@@ -19,6 +19,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
+
+    }
+    public function register_del(): void
+    {
         // Singleton for the TransactionService
         $this->app->singleton('transaction', function ($app) {
             return new TransactionService;
@@ -44,6 +48,10 @@ class AppServiceProvider extends ServiceProvider
      * Bootstrap any application services.
      */
     public function boot(): void
+    {
+        
+    }
+    public function boot_del(): void
     {
         // Only generate the app key if it hasn't been set, and do it once during deployment
         if (env('APP_KEY') === null) {

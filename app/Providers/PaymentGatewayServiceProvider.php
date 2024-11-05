@@ -11,7 +11,10 @@ class PaymentGatewayServiceProvider extends ServiceProvider
     /**
      * Register services.
      */
+    
     public function register(): void
+    {}
+    public function register_del(): void
     {
         $this->app->singleton(PaypalPaymentGateway::class, function () {
             return new PaypalPaymentGateway;

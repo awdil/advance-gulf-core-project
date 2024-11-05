@@ -30,6 +30,10 @@ class ViewServiceProvider extends ServiceProvider
     public function boot(): void
     {
 
+    }
+    public function boot_del(): void
+    {
+
         // Caching plugin data
         $this->composePluginData();
 

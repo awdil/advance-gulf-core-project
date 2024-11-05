@@ -13,6 +13,10 @@ class BroadcastServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+
+    }
+    public function boot_del(): void
+    {
         // Register broadcast routes
         Broadcast::routes();
 

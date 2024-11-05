@@ -20,6 +20,10 @@ class PluginServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+
+    }
+    public function boot_del(): void
+    {
         $googleReCaptchaCredentials = Plugin::credentials('google-recaptcha');
         config()->set([
             'services.recaptcha.key' => $googleReCaptchaCredentials['recaptcha_key'],
